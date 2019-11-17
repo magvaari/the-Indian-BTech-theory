@@ -32,10 +32,10 @@ For example, in the case of the library information system, some of the concepts
 During object-oriented design, there is an emphasis on defining software objects and how they collaborate to fulfill the requirements.   
 For example, in the library system, a Book software object may have a title attribute and a getChapter method. 
 
-| Object-Oriented Analysis | Object-Oriented Design |
-| --- | --- |
-| find/describe objects/concepts | define software objects -> how they collaborate to fulfill requirement |
-| defining/ describing domain concepts | visualizing domain concepts |
+Object-Oriented Analysis | Object-Oriented Design
+------------------------ | ----------------------
+find/describe objects/concepts | define software objects -> how they collaborate to fulfill requirement
+defining/ describing domain concepts | visualizing domain concepts
 
 
 ## The UML :: The Unified Modeling Language 
@@ -48,15 +48,15 @@ The UML was adopted as the standard diagramming notation for object-oriented mod
 It combines commonly accepted best practices, such as an iterative lifecycle and risk-driven development, into a cohesive and well-documented description.  
 
 ### Difference between Unified Process model and Waterfall model
-| Unified Process model | Waterfall model |
-| --- | --- |
-| An iterative process. | A sequential process with prescribed steps in which current phase is completed before going to the next phase |
-| Develops the product in several stages based on feedback from the stockholders. | It does not develop the product in several stages based on feedback from the stockholders. |
-| Because each Unified Process iteration produces an executable release, the customers get to realize benefits much earlier than Waterfall. | Benefits are realised at a later stage as compared to Unified Process. |
-| An adaptable framework of software processes. | A prescriptive concrete process |
-| The disciplines (Analysis, Design, Coding, Testing etc) are done iteratively and concurrently. | The disciplines are generally done sequentially (e.g. Coding only starts once Requirements have been finalized and Design has been accepted). |
-| Multi disciplinary phrases. e.g. In Inception, design and prototype coding are encouraged with requirements and analysis to reduce future risk and improve estimates. Still, construction phase may require further analysis.| The term phases (inception, elaboration, construction, transition) are dedicated to a single discipline or single deliverable |
-| promoted budgeting at a per-phase basis, e.g. the effort/cost for a phase would be known/iterated/improved as one of the deliverables of the preceding phase. | promoted the concept of a 'contractual' Software Requirement or Software Specification document, which defines the deliverables and basis for project budget or fixed price transaction. |
+Unified Process model | Waterfall model
+--------------------- | ---------------
+An iterative process. | A sequential process with prescribed steps in which current phase is completed before going to the next phase
+Develops the product in several stages based on feedback from the stockholders. | It does not develop the product in several stages based on feedback from the stockholders.
+Because each Unified Process iteration produces an executable release, the customers get to realize benefits much earlier than Waterfall. | Benefits are realised at a later stage as compared to Unified Process.
+An adaptable framework of software processes. | A prescriptive concrete process.
+The disciplines (Analysis, Design, Coding, Testing etc) are done iteratively and concurrently. | The disciplines are generally done sequentially (e.g. Coding only starts once Requirements have been finalized and Design has been accepted).
+Multi disciplinary phrases. e.g. In Inception, design and prototype coding are encouraged with requirements and analysis to reduce future risk and improve estimates. Still, construction phase may require further analysis.| The term phases (inception, elaboration, construction, transition) are dedicated to a single discipline or single deliverable.
+promoted budgeting at a per-phase basis, e.g. the effort/cost for a phase would be known/iterated/improved as one of the deliverables of the preceding phase. | promoted the concept of a 'contractual' Software Requirement or Software Specification document, which defines the deliverables and basis for project budget or fixed price transaction.
 
  
 ### Unified Process Phases
@@ -80,17 +80,17 @@ If it has been decided beforehand that the project will definitely be done, and 
 10-20% use cases should be written in detail to obtain some realistic insight into the scope of the problem.
  
 ##### Inception artifacts and issues addressed
-| Artifact | Comment |
-| --- | --- |
-| Vision and Business Case | Describes the high-level goals and constraints, the business case, and provides an executive summary.|
-| Use-Case Model | Describes the functional requirements, and related non-functional requirements. |
-| Supplementary Specification | Describes other requirements. |
-| Glossary | Key domain terminology. |
-| Risk List & Risk Management Plan | Describes the business, technical, resource, schedule risks, and ideas for their mitigation or response. |
-| Prototypes and proof-of-concepts | To clarify the vision, and validate technical ideas. |
-| Iteration Plan | Describes what to do in the first elaboration iteration. |
-| Phase Plan & Software Development Plan | Low-precision guess for elaboration phase duration and effort. Tools, people, education, and other resources. |
-| Development Case | A description of the customized UP steps and artifacts for this project. In the UP, one always customizes it for the project. |
+Artifact | Comment
+-------- | -------
+Vision and Business Case | Describes the high-level goals and constraints, the business case, and provides an executive summary.
+Use-Case Model | Describes the functional requirements, and related non-functional requirements.
+Supplementary Specification | Describes other requirements.
+Glossary | Key domain terminology.
+Risk List & Risk Management Plan | Describes the business, technical, resource, schedule risks, and ideas for their mitigation or response.
+Prototypes and proof-of-concepts | To clarify the vision, and validate technical ideas.
+Iteration Plan | Describes what to do in the first elaboration iteration.
+Phase Plan & Software Development Plan | Low-precision guess for elaboration phase duration and effort. Tools, people, education, and other resources.
+Development Case | A description of the customized UP steps and artifacts for this project. In the UP, one always customizes it for the project.
 
 #### Elaboration
 Elaboration is the initial series of iterations during which:
@@ -99,15 +99,15 @@ Elaboration is the initial series of iterations during which:
 - the core architectural elements are implemented and proven
 
 ##### Elaboration artifacts and issues addressed
-| Artifact | Comment |
-| --- | --- |
-| Domain Model | This is a visualization of the domain concepts; it is similar to a static information model of the domain entities. |
-| Design Model | This is the set of diagrams that describes the logical design. This includes software class diagrams, object interaction dia- grams, package diagrams, and so forth. |
-| Software Architecture Document | A learning aid that summarizes the key architectural issues and their resolution in the design. It is a summary of the outstanding design ideas and their motivation in the system. |
-| Data Model | This includes the database schemas, and the mapping strategies between object and non-object representations. |
-| Test Model | A description of what will be tested, and how. |
-| Implementation Model | This is the actual implementation — the source code, executables, database, and so on. |
-| Use-Case Storyboards, UI Prototypes | A description of the user interface, paths of navigation, usability models, and so forth. |
+Artifact | Comment
+-------- | -------
+Domain Model | This is a visualization of the domain concepts; it is similar to a static information model of the domain entities.
+Design Model | This is the set of diagrams that describes the logical design. This includes software class diagrams, object interaction dia- grams, package diagrams, and so forth.
+Software Architecture Document | A learning aid that summarizes the key architectural issues and their resolution in the design. It is a summary of the outstanding design ideas and their motivation in the system.
+Data Model | This includes the database schemas, and the mapping strategies between object and non-object representations. 
+Test Model | A description of what will be tested, and how.
+Implementation Model | This is the actual implementation — the source code, executables, database, and so on.
+Use-Case Storyboards, UI Prototypes | A description of the user interface, paths of navigation, usability models, and so forth.
 
 ## System Behaviour
 **System behaviour** is a description of what a system does, without explaining how it does it.
@@ -171,9 +171,9 @@ It is illustrated with a set of class diagrams in which no operations are define
 
 #### Domain Model: Conceptual Class
 A conceptual class may be considered in terms of its symbol, intension, and extension. It is an idea, thing, or object. 
-• Symbol—words or images representing a conceptual class.
-• Intension—the definition of a conceptual class.
-• Extension—the set of examples to which the conceptual class applies.
+ - Symbol—words or images representing a conceptual class.
+ - Intension—the definition of a conceptual class.
+ - Extension—the set of examples to which the conceptual class applies.
 
 For example, consider the conceptual class for the event of a purchase transac- tion. I may choose to name it by the symbol Sale. The intension of a Sale may state that it "represents the event of a purchase transaction, and has a date and time." The extension of Sale is all the examples of sales; in other words, the set of all sales.
  
@@ -185,7 +185,7 @@ When creating a domain model, it is usually the symbol and intensional view of a
 3. Use of analysis patterns.
 
 ##### Specification or Description Conceptual Class
- If someone asks, "How much do Object- Burgers cost?", no one can answer, because the memory of their price was attached to inventoried instances, which were deleted as they were sold.
+If someone asks, "How much do Object- Burgers cost?", no one can answer, because the memory of their price was attached to inventoried instances, which were deleted as they were sold.
  
 **Cons of not using description classes:**
 
@@ -299,12 +299,12 @@ For instance, physical assemblies are organized in aggregation relationships, su
 
 Aggregation is shown in the UML with a hollow or filled diamond symbol at the composite end of a whole-part association. 
 
-| Composite aggregation, or composition | Shared Aggregation |
-| --- | --- |
-| Part is a member of only on composite object. | Part may be simultaneously in many composite objects.|
-| There is an existence and disposition dependency of the part on the composite. | There is no such dependency of part on the aggregate. |
-| Represented by Filled Diamond. | Represented by Hollow Diamond. |
-| For example, a hand is in a composition relationship to a finger. | For example, Fingers would exist in Hand as well as Legs (if not called Toes). |
+Composite aggregation, or composition | Shared Aggregation
+------------------------------------- | ------------------
+Part is a member of only on composite object. | Part may be simultaneously in many composite objects.
+There is an existence and disposition dependency of the part on the composite. | There is no such dependency of part on the aggregate.
+Represented by Filled Diamond. | Represented by Hollow Diamond.
+For example, a hand is in a composition relationship to a finger. | For example, Fingers would exist in Hand as well as Legs (if not called Toes).
 
 **Consider showing aggregation when:**
 1. The lifetime of the part is bound within the lifetime of the composite — there is a create-delete dependency of the part on the whole.
