@@ -48,6 +48,7 @@ The UML was adopted as the standard diagramming notation for object-oriented mod
 It combines commonly accepted best practices, such as an iterative lifecycle and risk-driven development, into a cohesive and well-documented description.  
 
 ### Difference between Unified Process model and Waterfall model
+
 Unified Process model | Waterfall model
 --------------------- | ---------------
 An iterative process. | A sequential process with prescribed steps in which current phase is completed before going to the next phase
@@ -80,6 +81,7 @@ If it has been decided beforehand that the project will definitely be done, and 
 10-20% use cases should be written in detail to obtain some realistic insight into the scope of the problem.
  
 ##### Inception artifacts and issues addressed
+
 Artifact | Comment
 -------- | -------
 Vision and Business Case | Describes the high-level goals and constraints, the business case, and provides an executive summary.
@@ -99,6 +101,7 @@ Elaboration is the initial series of iterations during which:
 - the core architectural elements are implemented and proven
 
 ##### Elaboration artifacts and issues addressed
+
 Artifact | Comment
 -------- | -------
 Domain Model | This is a visualization of the domain concepts; it is similar to a static information model of the domain entities.
