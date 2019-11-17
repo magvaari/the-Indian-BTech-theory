@@ -1,6 +1,7 @@
 # What Is Object-Oriented Analysis and Design? 
  
 #### Table of Contents
+
 - [Object-Oriented Analysis](#Object-Oriented-Analysis)
 - [Object-Oriented Design](#Object-Oriented-Design)
 - [The Unified Modeling Language (UML)](#the-uml--the-unified-modeling-language)
@@ -23,12 +24,13 @@
     - [Refining Domain Models](#refining-domain-models)
 
 
- 
 ## Object-Oriented Analysis
+
 During object-oriented analysis, there is an emphasis on finding and describing the objects—or concepts—in the problem domain.  
 For example, in the case of the library information system, some of the concepts include Book, Library, and Patron. 
   
 ## Object-Oriented Design
+
 During object-oriented design, there is an emphasis on defining software objects and how they collaborate to fulfill the requirements.   
 For example, in the library system, a Book software object may have a title attribute and a getChapter method. 
 
@@ -38,13 +40,16 @@ find/describe objects/concepts | define software objects -> how they collaborate
 defining/ describing domain concepts | visualizing domain concepts
 
 
-## The UML :: The Unified Modeling Language 
+## The UML :: The Unified Modeling Language
+
 A language for specifying, visualizing, constructing, and documenting the artifacts of software systems, business modeling and other non-software systems 
  
-### UML History 
+### UML History
+
 The UML was adopted as the standard diagramming notation for object-oriented modeling in 1997 by the OMG - Object Modelling Group.
  
 ## The UP :: The Unified Process
+
 It combines commonly accepted best practices, such as an iterative lifecycle and risk-driven development, into a cohesive and well-documented description.  
 
 ### Difference between Unified Process model and Waterfall model
@@ -61,6 +66,7 @@ promoted budgeting at a per-phase basis, e.g. the effort/cost for a phase would 
 
  
 ### Unified Process Phases
+
 1. **Inception**
     — A kind of feasibility phase, where just enough investigation is done to support a decision to continue or stop. Keywords: approximate vision, business case, scope, vague estimates. 
 2. **Elaboration**
@@ -71,6 +77,7 @@ promoted budgeting at a per-phase basis, e.g. the effort/cost for a phase would 
     — beta tests, deployment.
 
 #### Inception
+
 The intent of inception is to 
 - establish some initial common vision for the objectives of the project, 
 - determine if it is feasible, and 
@@ -95,6 +102,7 @@ Phase Plan & Software Development Plan | Low-precision guess for elaboration pha
 Development Case | A description of the customized UP steps and artifacts for this project. In the UP, one always customizes it for the project.
 
 #### Elaboration
+
 Elaboration is the initial series of iterations during which:
 - the majority of requirements are discovered and stabilized
 - the major risks are mitigated or retired
@@ -113,6 +121,7 @@ Implementation Model | This is the actual implementation — the source code, ex
 Use-Case Storyboards, UI Prototypes | A description of the user interface, paths of navigation, usability models, and so forth.
 
 ## System Behaviour
+
 **System behaviour** is a description of what a system does, without explaining how it does it.
 
 Description includes:
@@ -121,6 +130,7 @@ Description includes:
 - System Contracts
 
 ### Use Cases
+
 An **actor** is something with behaviour.
 
 A **scenario** or **use case instance** is a specific sequence of actions and interactions between actors and the system under discussion.
@@ -133,12 +143,14 @@ Types:
 - fully dressed or formal, most elaborate.
 
 #### Relating Use Cases
+
 An organization mechanism to (ideally) 
  - improve communication and comprehension of the use cases, 
  - reduce duplication of text, and 
  - improve management of the use case documents.
  
 ##### Include Relationship
+
 Include is used to extract use case fragments that are duplicated in multiple use cases. The included use case cannot stand alone and the original use case is not complete without the included one. This should be used sparingly and only in cases where the duplication is significant and exists by design (rather than by coincidence).
 
 For example, the flow of events that occurs at the beginning of every ATM use case (when the user puts in their ATM card, enters their PIN, and is shown the main menu) would be a good candidate for an include.
@@ -149,22 +161,27 @@ When to use?
 2. A use case is very complex and long, and separating it into subunits aids comprehension.
 
 ##### Extend Relationship
+
 Extend is used when a use case conditionally adds steps to another first class use case. The idea is to create an extending or addition use case, and within it, describe where and under what condition it extends the behavior of some base use case. 
 
 For example, imagine "Withdraw Cash" is a use case of an ATM machine. "Access Fee" would extend Withdraw Cash and describe the conditional "extension point" that is instantiated when the ATM user doesn't bank at the ATM's owning institution. Notice that the basic "Withdraw Cash" use case stands on its own, without the extension.
 
 
 ### Use Case Model: System Sequence Diagrams
+
 A system sequence diagram (SSD) shows, for a particular scenario of a use case, the events that external actors generate, their order, and inter-system events. All systems are treated as a black box; the emphasis of the diagram is events that cross the system boundary from actors to systems.
       
       An SSD should be done for the main success scenario of the use case, and frequent or complex alternative scenarios.
       
 #### Relationship between SSD and Use Cases
+
 A System Sequence Diagram shows system events for a scenario of a use case, therefore it is generated from inspection of a use case.
 
 
 ### Domain Models
+
 **Domain models or Conceptual models or Analysis object models**
+
 A **domain model** is a visual representation of conceptual classes or real-world objects in a domain of interest.
 
 It is illustrated with a set of class diagrams in which no operations are defined. It may show:
@@ -173,6 +190,7 @@ It is illustrated with a set of class diagrams in which no operations are define
 - attributes of conceptual classes
 
 #### Domain Model: Conceptual Class
+
 A conceptual class may be considered in terms of its symbol, intension, and extension. It is an idea, thing, or object. 
  - Symbol—words or images representing a conceptual class.
  - Intension—the definition of a conceptual class.
@@ -183,11 +201,13 @@ For example, consider the conceptual class for the event of a purchase transac- 
 When creating a domain model, it is usually the symbol and intensional view of a conceptual class that are of most practical interest.
 
 **Identification of Conceptual Classes**
+
 1. Use a conceptual class category list.
 2. Identify noun phrases.
 3. Use of analysis patterns.
 
 ##### Specification or Description Conceptual Class
+
 If someone asks, "How much do Object- Burgers cost?", no one can answer, because the memory of their price was attached to inventoried instances, which were deleted as they were sold.
  
 **Cons of not using description classes:**
@@ -211,40 +231,48 @@ Domains specially requiring specification conceptual classes : sales, product, m
 3. It reduces redundant or duplicated information.
 
 ##### Conceptual Class Hierarchy
+
 All the members of a conceptual subclass set are members of their superclass set. A potential subclass should conform to these rules to be considered as correct conceptual class:
  - 100% Rule (definition conformance)
  - Is-a Rule (set membership conformance)
 
 **Conceptual Subclass Definition Conformance or the 100% rule**
+
 100% of the conceptual superclass's definition should be applicable to the sub- class. The subclass must conform to 100% of the superclass's:
  - attributes
  - associations
 
 **Conceptual Subclass Set Conformance**
+
 1. Statements about _Superclass_ apply to _Subclass_
 2. **Is-a-Kind-of Rule**: A conceptual subclass should be a member of the set of the superclass. _Conceptual Subclass is a kind of Superclass_
 3. **Is-a Rule**: All the members of a subclass set must be members of their superclass set. Informally, Subclass is a Superclass_
 4. More tersely, _is-a-kind-of_ is called _is-a_.
 
 **Create a conceptual subclass of a superclass when:**
+
 1. The subclass has additional attributes of interest.
 2. The subclass has additional associations of interest.
 3. The subclass concept is operated on, handled, reacted to, or manipulated differently than the superclass or other subclasses, in ways that are of interest.
 4. The subclass concept represents an animate thing (for example, animal, robot) that behaves differently than the Superclass or other Subclasses, in ways that are of interest.
 
 **Create a conceptual superclass in a generalization relationship to subclasses when:**
+
 1. The potential conceptual subclasses represent variations of a similar concept.
 2. The subclasses will conform to the 100% and Is-a rules.
 3. All subclasses have the same attribute which can be factored out and expressed in the superclass.
 4. All subclasses have the same association which can be factored out and related to the superclass.
 
 ##### Generalize Relationship
+
 **generalization-specialization class hierarchy**
-Generalization is the activity of identifying commonality among concepts and defining superclass (general concept) and subclass (specialized concept) relationships. It is a way to construct taxonomic classifications among concepts which are then illustrated in class hierarchies.
+
+**Generalization** is the activity of identifying commonality among concepts and defining superclass (general concept) and subclass (specialized concept) relationships. It is a way to construct taxonomic classifications among concepts which are then illustrated in class hierarchies.
 
 For example, a _Vehicle_ is a generalized concept and a superclass of _Bus_, _Car_, and _Bicycle_, which are subclasses and specialized concepts of _Vehicle_. THerefore, _Bus_ is-a _Vehicle_ as well as _Bus_ is-a-kind-of _Vehicle_.
 
 #### Domain Model: Associations
+
 An **association** is a relationship between types (or more specifically, instances of those types) that indicates some meaningful and interesting connection.
 
 An association is represented as a line between classes with an association name. The association is inherently bidirectional, meaning that from instances of either class, logical traversal to the other is possible.
@@ -255,23 +283,27 @@ An association is represented as a line between classes with an association name
 - navigability
 
 **Criteria for Useful Associations:**
+
 1. Associations for which knowledge of the relationship needs to be preserved for some duration ("need-to-know" associations).
 2. It is more important to identify conceptual classes than to identify associations.
 3.  Too many associations tend to confuse a domain model rather than illuminate it. Their discovery can be time-consuming, with marginal benefit.
 4. Avoid showing redundant or derivable associations.
 
 #### Domain Model: Attributes
+
 An **attribute** is a logical data value of an object. 
 
 Example: A objectReceipt or a Sale conceptual class need attributes as Price, Date and Time. This information is frequently a used by the management.
 
 **Criteria for Useful Attributes:**
+
 1. Attributes for which the requirements (for example, use cases) suggest or imply the need to remember information.
 2. The attributes in a domain model should preferably be simple attributes or data types.
 3. Very common attribute data types include: Boolean, Date, Number, String (Text), Time
 4. Other common types include: Address, Color, Geometries (Point, Rectangle), Phone Number, Social Security Number, Universal Product Code (UPC), SKU, ZIP or postal codes, enumerated types
 
 ### Use Case Model: Operation Contracts
+
 **Contracts** describe detailed system behavior in terms of state changes to objects in the Domain Model, after a system operation has executed.
 
 **Creation of the contracts leads to:**
@@ -296,6 +328,7 @@ Consider an airline reservation system and the system operation _addNewReservati
 ### Refining Domain Models
 
 #### Aggregation
+
 Aggregation is a kind of association used to model whole-part relationships between things. The whole is called the composite. This association exhibits a _Has-part_ relationship.
 
 For instance, physical assemblies are organized in aggregation relationships, such as a Hand aggregates Fingers.
@@ -310,10 +343,12 @@ Represented by Filled Diamond. | Represented by Hollow Diamond.
 For example, a hand is in a composition relationship to a finger. | For example, Fingers would exist in Hand as well as Legs (if not called Toes).
 
 **Consider showing aggregation when:**
+
 1. The lifetime of the part is bound within the lifetime of the composite — there is a create-delete dependency of the part on the whole.
 2. There is an obvious whole-part physical or logical assembly.
 3. Some properties of the composite propagate to the parts, such as the location.
 4. Operations applied to the composite propagate to the parts, such as destruction, movement, recording.
 
 #### References:
+
 [1] Applying UML and Patterns by Craig Larman
